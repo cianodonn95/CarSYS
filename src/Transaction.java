@@ -65,7 +65,7 @@ public class Transaction {
 	public int getCurrentYear() { 
 		return Currentyear;
 	}
-////////////////////////////////////////////getting the value of current month/////////////////
+//-----------------------getting the value of current month
 	public int getCurrentMonthValue() {
 		if(getCurrentMonth().equals("Jan"))
 			monthe = 1;
@@ -118,7 +118,7 @@ public class Transaction {
 		return PickYear;
 	}
 	
-//////////////////////////////////////getting the value of pick up month///////////////////////////
+//--------------------getting the value of pick up month
 	public int getPickMonthValue() {
 		if(getPickMonth().equals("Jan"))
 			monthe = 1;
@@ -171,8 +171,9 @@ public class Transaction {
 		return returnYear;
 	}
 	
-/////////////////////////////////getting the value of return month////////////////////////////
+//---------------------------getting the value of return month
 	public int getReturnMonthValue() {
+
 		if(getReturnMonth().equals("Jan"))
 			monthe = 1;
 		
@@ -224,7 +225,7 @@ public class Transaction {
 		return birthYear;
 	}
 
-//////////////////////////////////////getting the value of birth month////////////////////////////
+//--------------------getting the value of birth month
 	public int getBirthMonthValue() { 
 		if(getBirthMonth().equals("Jan"))
 			monthe = 1;
@@ -265,7 +266,7 @@ public class Transaction {
 		return monthe;
 	}
 
-//////////////////////////////////////////////getting the age///////////////////////////////////
+//-----------------------------getting the age
 	public int getAge(){ 
 		
 		int age = 0;
@@ -289,7 +290,7 @@ public class Transaction {
 		return age;
 	}
 
-///////////////////////for getting How many days Car has been rented/////////////////
+//---------------------for getting How many days Car has been rented
 	public int getDays(){
 		
 		int totalMonth = 0, totalYear = 0;
@@ -332,13 +333,13 @@ public class Transaction {
 		return days;
 	}
 	
-///////////////////////////to get the total Rental price/////////////////////////////////
+//-----------------------to get the total Rental price
 	public double getRentalPrice() {
 		
 		return getDays() * aCar.getCarPrice();
 	}
 	
-//////////////////////////////////////change to String for checking the date////////////////////////
+//--------------------change to String for checking the date
 	public String toStringDateChecker() {
 		String outpot = "";
 		
@@ -357,50 +358,49 @@ public class Transaction {
 		return outpot;
 	}
 	
-//////////////////////////////////////////change to String for checking the age of customer/////////////////////
+//-----------------------change to String for checking the age of customer
 	public String toStringAgeChecker() {
 		String outfut = "";
 		
-		if(getAge() >= 20)
+		if(getAge() >= 18)
 			outfut += String.format("TRUE");
 			
-		else if(getAge() < 20)
+		else if(getAge() < 18)
 			outfut += String.format("FALSE");
 			
 		return outfut;
 	}
 
-//////////////////////////////(int)age to (String)age to print in GUI/////////////////////
+//--------------------------------(int)age to (String)age to print in GUI
 	public String toStringAge() {
 		String output = "";
 		output += String.format("%d", getAge()); 
 		return output;
 	}
 	
-/////////////////////////////////Status and Gender cheking , "mr/mrs"///////////////////////////////////
-	public String toStringMrMrs() {
-		String outfowt = "";
-		
+//---------------REFERENCE STACK OVER FLOW
+//---------------Converts (formats) the details entered to readable string for Receipt page and txt file
+		public String toStringMrMrs() {
+		String outPut = "";
+
+
 		if(aCustomer.getGender().equals("M") || aCustomer.getGender().equals("m"))
-			outfowt += String.format("Mr.");
+			outPut += String.format("Mr.");
 		
 		else if((aCustomer.getStatus().equals("S") || aCustomer.getStatus().equals("s")) && aCustomer.getGender().equals("F") || aCustomer.getGender().equals("f"))
-			outfowt += String.format("Ms.");
+			outPut += String.format("Ms.");
 	
 		else if((aCustomer.getStatus().equals("Ma") || aCustomer.getStatus().equals("ma")) && aCustomer.getGender().equals("F") || aCustomer.getGender().equals("f"))
-			outfowt += String.format("Mrs.");
+			outPut += String.format("Mrs.");
 			
-		return outfowt;
+		return outPut;
 	}
 	
-//////////////////////////////////////////show all for customer///////////////////////////////////
+//---------------REFERENCE STACK OVERFLOW---------------show all for customers
 	public String toStringReceipt() {
 		String outMe = "";
-		
 
-		outMe += String.format("               	             Car Rental\n");
-		outMe += String.format("                              Owned & Operated By:\n");
-		outMe += String.format("                                      COD\n");
+
 		outMe += String.format("                             RENTAL TRANSACTION\n");
 		outMe += String.format("-----------------------------------------------------------------------------------------------------\n");
 		outMe += String.format("Car                                                        %s\n", aCar.getCar());
@@ -412,7 +412,7 @@ public class Transaction {
 		return outMe;
 	}
 	
-//////////REFERENCE - STACK OVERFLOW///////////save all data to .txt file for the Owner//////////////////////////////
+//-------REFERENCE - STACK OVERFLOW--------save all data to .txt file for the Owner
 	public void saveToFile() throws IOException {
 	
 	PrintWriter outFile = new PrintWriter(new FileOutputStream(new File("Transactions_Inventory.txt"), true));
