@@ -6,7 +6,7 @@ public class Transaction {
 	final static int MONTHS_DAYS = 30, MONTHS = 12; //30 days is a month for this program
 	private Customer aCustomer; //from the Customer
 	private Car aCar; //from the Customer
-	private int monthe = 0, days = 0;
+	private int month = 0, days = 0;
 
 	private String CurrentMonth;
 	private int CurrentDate, Currentyear;
@@ -68,42 +68,42 @@ public class Transaction {
 	//-----------------------getting the value of current month
 	public int getCurrentMonthValue() {
 		if(getCurrentMonth().equals("Jan"))
-			monthe = 1;
+			month = 1;
 
 		else if(getCurrentMonth().equals("Feb"))
-			monthe = 2;
+			month = 2;
 
 		else if(getCurrentMonth().equals("Mar"))
-			monthe = 3;
+			month = 3;
 
 		else if(getCurrentMonth().equals("Apr"))
-			monthe = 4;
+			month = 4;
 
 		else if(getCurrentMonth().equals("May"))
-			monthe = 5;
+			month = 5;
 
 		else if(getCurrentMonth().equals("Jun"))
-			monthe = 6;
+			month = 6;
 
 		else if(getCurrentMonth().equals("Jul"))
-			monthe = 7;
+			month = 7;
 
 		else if(getCurrentMonth().equals("Aug"))
-			monthe = 8;
+			month = 8;
 
 		else if(getCurrentMonth().equals("Sep"))
-			monthe = 9;
+			month = 9;
 
 		else if(getCurrentMonth().equals("Oct"))
-			monthe = 10;
+			month = 10;
 
 		else if(getCurrentMonth().equals("Nov"))
-			monthe = 11;
+			month = 11;
 
 		else if(getCurrentMonth().equals("Dec"))
-			monthe = 12;
+			month = 12;
 
-		return monthe;
+		return month;
 	}
 
 	public String getPickMonth() {
@@ -121,42 +121,42 @@ public class Transaction {
 	//--------------------getting the value of pick up month
 	public int getPickMonthValue() {
 		if(getPickMonth().equals("Jan"))
-			monthe = 1;
+			month = 1;
 
 		else if(getPickMonth().equals("Feb"))
-			monthe = 2;
+			month = 2;
 
 		else if(getPickMonth().equals("Mar"))
-			monthe = 3;
+			month = 3;
 
 		else if(getPickMonth().equals("Apr"))
-			monthe = 4;
+			month = 4;
 
 		else if(getPickMonth().equals("May"))
-			monthe = 5;
+			month = 5;
 
 		else if(getPickMonth().equals("Jun"))
-			monthe = 6;
+			month = 6;
 
 		else if(getPickMonth().equals("Jul"))
-			monthe = 7;
+			month = 7;
 
 		else if(getPickMonth().equals("Aug"))
-			monthe = 8;
+			month = 8;
 
 		else if(getPickMonth().equals("Sep"))
-			monthe = 9;
+			month = 9;
 
 		else if(getPickMonth().equals("Oct"))
-			monthe = 10;
+			month = 10;
 
 		else if(getPickMonth().equals("Nov"))
-			monthe = 11;
+			month = 11;
 
 		else if(getPickMonth().equals("Dec"))
-			monthe = 12;
+			month = 12;
 
-		return monthe;
+		return month;
 	}
 
 	public String getReturnMonth() {
@@ -175,42 +175,42 @@ public class Transaction {
 	public int getReturnMonthValue() {
 
 		if(getReturnMonth().equals("Jan"))
-			monthe = 1;
+			month = 1;
 
 		else if(getReturnMonth().equals("Feb"))
-			monthe = 2;
+			month = 2;
 
 		else if(getReturnMonth().equals("Mar"))
-			monthe = 3;
+			month = 3;
 
 		else if(getReturnMonth().equals("Apr"))
-			monthe = 4;
+			month = 4;
 
 		else if(getReturnMonth().equals("May"))
-			monthe = 5;
+			month = 5;
 
 		else if(getReturnMonth().equals("Jun"))
-			monthe = 6;
+			month = 6;
 
 		else if(getReturnMonth().equals("Jul"))
-			monthe = 7;
+			month = 7;
 
 		else if(getReturnMonth().equals("Aug"))
-			monthe = 8;
+			month = 8;
 
 		else if(getReturnMonth().equals("Sep"))
-			monthe = 9;
+			month = 9;
 
 		else if(getReturnMonth().equals("Oct"))
-			monthe = 10;
+			month = 10;
 
 		else if(getReturnMonth().equals("Nov"))
-			monthe = 11;
+			month = 11;
 
 		else if(getReturnMonth().equals("Dec"))
-			monthe = 12;
+			month = 12;
 
-		return monthe;
+		return month;
 	}
 
 	public String getBirthMonth() {
@@ -228,42 +228,42 @@ public class Transaction {
 	//--------------------getting the value of birth month
 	public int getBirthMonthValue() {
 		if(getBirthMonth().equals("Jan"))
-			monthe = 1;
+			month = 1;
 
 		else if(getBirthMonth().equals("Feb"))
-			monthe = 2;
+			month = 2;
 
 		else if(getBirthMonth().equals("Mar"))
-			monthe = 3;
+			month = 3;
 
 		else if(getBirthMonth().equals("Apr"))
-			monthe = 4;
+			month = 4;
 
 		else if(getBirthMonth().equals("May"))
-			monthe = 5;
+			month = 5;
 
 		else if(getBirthMonth().equals("Jun"))
-			monthe = 6;
+			month = 6;
 
 		else if(getBirthMonth().equals("Jul"))
-			monthe = 7;
+			month = 7;
 
 		else if(getBirthMonth().equals("Aug"))
-			monthe = 8;
+			month = 8;
 
 		else if(getBirthMonth().equals("Sep"))
-			monthe = 9;
+			month = 9;
 
 		else if(getBirthMonth().equals("Oct"))
-			monthe = 10;
+			month = 10;
 
 		else if(getBirthMonth().equals("Nov"))
-			monthe = 11;
+			month = 11;
 
 		else if(getBirthMonth().equals("Dec"))
-			monthe = 12;
+			month = 12;
 
-		return monthe;
+		return month;
 	}
 
 	//-----------------------------getting the age
