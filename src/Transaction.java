@@ -1,9 +1,8 @@
-import java.util.*;
 import java.io.*;
 
 public class Transaction {
 
-	final static int MONTHS_DAYS = 30, MONTHS = 12; //30 days is a month for this program
+	final static int MONTHS_DAYS = 31, MONTHS = 12; //30 days in a month //12 months in a year
 	private Customer aCustomer; //from the Customer
 	private Car aCar; //from the Customer
 	private int month = 0, days = 0;
@@ -225,7 +224,7 @@ public class Transaction {
 		return birthYear;
 	}
 
-	//--------------------getting the value of birth month
+	//--------------------Getting the value of birth month
 	public int getBirthMonthValue() {
 		if(getBirthMonth().equals("Jan"))
 			month = 1;
@@ -290,7 +289,7 @@ public class Transaction {
 		return age;
 	}
 
-	//---------------------for getting How many days Car has been rented
+	//---------------------For getting how many days Car has been rented
 	//-------------ASK JB---------------
 	public int getDays(){
 
@@ -414,7 +413,7 @@ public class Transaction {
 	//-------REFERENCE - STACK OVERFLOW--------save all data to .txt file for the Owner
 	public void saveToFile() throws IOException {
 
-		PrintWriter outFile = new PrintWriter(new FileOutputStream(new File("Transactions_Inventory.txt"), true));
+		PrintWriter outFile = new PrintWriter(new FileOutputStream(new File("Transactions.txt"), true));
 		outFile.println("Current Date: " + getCurrentMonth() + " " + getCurrentDate() + ", " + getCurrentYear());
 		outFile.println(" ");
 		outFile.println("Pick up Date: " + getPickMonth() + " " + getPickDate() + ", " + getPickYear());
