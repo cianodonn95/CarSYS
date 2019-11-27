@@ -86,7 +86,7 @@ public class RentalView extends JFrame {
         reserveP = new JPanel(null);
         reserveP.setBackground(Color.WHITE);
 
-        dayL = new JLabel("Reserve Rental Day(s):");
+        dayL = new JLabel("Make Reservation:");
         dayL.setFont(new Font("Serif", Font.BOLD, 23));
         dayL.setForeground(Color.BLUE);
         dayL.setBounds(50, 1, 250, 100);
@@ -100,8 +100,8 @@ public class RentalView extends JFrame {
         returnDateL.setBounds(50, 80, 100, 100);
         reserveP.add(returnDateL); //adding to reservation details
 
-        birthDateL = new JLabel("Date of Birth:");
-        birthDateL.setBounds(60, 150, 100, 100);
+        birthDateL = new JLabel("DOB - Over 18's:");
+        birthDateL.setBounds(50, 150, 100, 100);
         reserveP.add(birthDateL); //adding to reservation details
 
         //----------------------------CHECK BOX for pickup date, return date, birth date
