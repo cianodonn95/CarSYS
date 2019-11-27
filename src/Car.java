@@ -1,40 +1,38 @@
 import java.util.*;
 import java.io.*;
 
-//Car class
 public class Car {
 
-    private String carType, carModel;
-    private double carPrice;
+	private String carType, carModel;
+	private double carPrice;
 
-    public Car() {
+	public Car() {
 
-        carType = "";
-        carModel = "";
-        carPrice = 0;
-    }
+		carType = "";
+		carModel = "";
+		carPrice = 0;
+	}
 
-    public void setCar(String cT, String cM, double cP){
+	public void setCar(String cT, String cM, double cP) {
 
-        carType = cT;
-        carModel = cM;
-        carPrice = cP;
-    }
+		carType = cT;
+		carModel = cM;
+		carPrice = cP;
+	}
 
-    public String getCarType() {
-        return carType;
-    }
+	public String getCarType() {
+		return carType;
+	}
 
-    public String getCarModel() {
-        return carModel;
-    }
+	public String getCarModel() {
+		return carModel;
+	}
 
-    public String getCar() {
-        return getCarType() + "-" + getCarModel();
-    }
+	public String getCar() {
+		return getCarType() + "-" + getCarModel();
+	}
 
-    public double getCarPrice() {
-        return carPrice;
-    }
-
+	public double getCarPrice() {
+		return carPrice;
+	}
 }
